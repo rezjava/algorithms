@@ -2,8 +2,8 @@ import java.util.Arrays;
 
 public class SortMerger {
 
-    public void sortMerger(int[] numbers) {
-        int len = numbers.length;
+    public void sortMerger(int[] array) {
+        int len = array.length;
         int n = 1; // кратность сравнений (сравнивать по 1-му елем., 2-м ...)
         int shift; // сдвиг в перебираемом массиве
         int two_size; // количество елементов для 2-го массива
@@ -13,14 +13,16 @@ public class SortMerger {
             while (shift < len) {
                 if (shift + n >= len) break;
                 two_size = (shift + n * 2 > len) ? (len - (shift + n)) : n;
-                arr2 = merge(Arrays.copyOfRange(numbers, shift, shift + n),
-                        Arrays.copyOfRange(numbers, shift + n, shift + n + two_size));
+                arr2 = merge(Arrays.copyOfRange(array, shift, shift + n),
+                        Arrays.copyOfRange(array, shift + n, shift + n + two_size));
                 for (int i = 0; i < n + two_size; ++i)
-                    numbers[shift + i] = arr2[i]; // замена на отсортированное
+                    array[shift + i] = arr2[i]; // замена на отсортированное
                 shift += n * 2;
             }
             n *= 2;
         }
+        System.out.println("Отсортированный массив:");
+        System.out.println(Arrays.toString(array));
     }
 
     private static int[] merge(int[] arr_1, int[] arr_2) {

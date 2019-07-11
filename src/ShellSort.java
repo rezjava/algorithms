@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ShellSort
 {
     public static void shellSort(int[] array) {
@@ -8,6 +10,8 @@ public class ShellSort
             }
             increment = increment / 2;
         }
+        System.out.println("Отсортированный массив:");
+        System.out.println(Arrays.toString(array));
     }
 
     private static void insertionSort(int[] arr, int startIndex, int increment) {

@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class BubbleSort {
     public static void bubbleSort(int[] array) {
         boolean isSorted = true;
@@ -13,5 +15,7 @@ public class BubbleSort {
                 }
             }
         }
+        System.out.println("Отсортированный массив:");
+        System.out.println(Arrays.toString(array));
     }
 }

@@ -1,21 +1,25 @@
+import java.util.Arrays;
+
 public class SortInsert {
-    public static void sortInsert(int[] numbers) {
+    public static void sortInsert(int[] array) {
 
         long startTime = System.nanoTime();
 
         int temp, j;
-        for (int i = 0; i < numbers.length - 1; i++) {
-            if (numbers[i] > numbers[i + 1]) {
-                temp = numbers[i + 1];
-                numbers[i + 1] = numbers[i];
+        for (int i = 0; i < array.length - 1; i++) {
+            if (array[i] > array[i + 1]) {
+                temp = array[i + 1];
+                array[i + 1] = array[i];
                 j = i;
-                while (j > 0 && temp < numbers[j - 1]) {
-                    numbers[j] = numbers[j - 1];
+                while (j > 0 && temp < array[j - 1]) {
+                    array[j] = array[j - 1];
                     j--;
                 }
-                numbers[j] = temp;
+                array[j] = temp;
             }
         }
+        System.out.println("Отсортированный массив:");
+        System.out.println(Arrays.toString(array));
         long finishTime = System.nanoTime() - startTime;
         System.out.println("программа выполнялась " + finishTime + " миллисекунд");
 

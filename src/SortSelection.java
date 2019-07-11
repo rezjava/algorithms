@@ -1,19 +1,22 @@
+import java.util.Arrays;
+
 public class SortSelection {
-    public static void sortChoice(int[] numbers) {
+    public static void sortSelection(int[] array) {
         long startTime = System.nanoTime();
 
         int min, temp;
-        for (int i = 0; i < numbers.length - 1; i++) {
+        for (int i = 0; i < array.length - 1; i++) {
             min = i;
-            for (int scan = i + 1; scan < numbers.length; scan++) {
-                if (numbers[scan] < numbers[min])
+            for (int scan = i + 1; scan < array.length; scan++) {
+                if (array[scan] < array[min])
                     min = scan;
             }
-            temp = numbers[min];
-            numbers[min] = numbers[i];
-            numbers[i] = temp;
-
+            temp = array[min];
+            array[min] = array[i];
+            array[i] = temp;
         }
+        System.out.println("Отсортированный массив:");
+        System.out.println(Arrays.toString(array));
         long finishTime = System.nanoTime() - startTime;
         System.out.println("программа выполнялась " + finishTime + " миллисекунд");
     }

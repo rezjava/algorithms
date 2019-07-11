@@ -6,6 +6,8 @@ public class QuickSort {
         int startIndex = 0;
         int endIndex = array.length-1;
         doSort(array, startIndex, endIndex);
+        System.out.println("Отсортированный массив:");
+        System.out.println(Arrays.toString(array));
     }
 
     public static void doSort(int[] array, int start, int end) {
