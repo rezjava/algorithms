@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a06657f-1d61-4941-afc2-c4fe581aaf87" name="Default" comment="the main() have been changed">
-      <change beforePath="$PROJECT_DIR$/.gitignor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myRepository" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArraySort/QuickSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArraySort/QuickSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ArraySort/ShellSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArraySort/ShellSort.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -481,7 +475,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32886904" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4908947" weight="0.6339286" />
-      <window_info anchor="bottom" auto_hide="true" x="61" y="156" width="1309" height="446" id="Terminal" internal_type="SLIDING" order="8" sideWeight="0.49406177" type="SLIDING" weight="0.8493544" />
+      <window_info active="true" anchor="bottom" auto_hide="true" x="61" y="156" width="1309" height="446" id="Terminal" internal_type="SLIDING" order="8" sideWeight="0.49406177" type="SLIDING" visible="true" weight="0.8493544" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.505303" side_tool="true" weight="0.9569584" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.2559524" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
