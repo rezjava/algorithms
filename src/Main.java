@@ -24,21 +24,30 @@ public class Main {
     }
 
     //ввести размерность массива
-    public static int inputValueOfArray() throws IOException {
-        System.out.println("введите размерность масстива: ");
-        Scanner scan = new Scanner(System.in);
-
-        int array_value = scan.nextInt();
-        if (array_value <= 0) {
-            System.out.println("вы ввели неверное значение размерности массива");
-        }
+    public static String inputLengthOfArray() throws IOException {
+        System.out.println("введите размерность масстива не более 1000: ");
+        Scanner in = new Scanner(System.in);
+        String array_value = in.next();
         return array_value;
     }
 
+    public static boolean checkLengthOfArray(String array_value) {
+        for (int i = 0; i < array_value.length(); i++) {
+            if (Character.isDigit(array_value.charAt(i))) {
+                continue;
+            } else {
+                System.out.println("You've written not a digit");
+                return false;
+            }
+        }
+        return true;
+    }
+
+
     //заполнить массив случайными числами
-    public static int[] inputNumInArray(int array_val) {
+    public static int[] inputNumInArray(int array_length) {
         System.out.println("массив заполнен случайными числами от 1 до 100\n");
-        int array[] = new int[array_val];
+        int array[] = new int[array_length];
 
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (1 + random() * 100);
@@ -107,19 +116,18 @@ public class Main {
         char choice;
 
         for (; ; ) {
-                showMenu();
-                do {
-                    choice = (char) System.in.read();
-                } while (!isValid(choice));
+            showMenu();
+            do {
+                choice = (char) System.in.read();
+            } while (!isValid(choice));
 
-                int array_value = inputValueOfArray();
-                int[] inputNumInArray = inputNumInArray(array_value);
-                switch_var(choice, inputNumInArray);
-                System.out.println();
-                System.out.println("Для продолжения нажмите 'y', выход - 'q'");
-                char choiceEnd = (char) System.in.read();
-                if (choiceEnd=='y')continue;
-                else break;
+            int[] inputNumInArray = inputNumInArray(inputLengthOfArray());
+            switch_var(choice, inputNumInArray);
+            System.out.println();
+            System.out.println("Для продолжения нажмите 'y', выход - 'q'");
+            char choiceEnd = (char) System.in.read();
+            if (choiceEnd == 'y') continue;
+            else break;
         }
     }
 }
