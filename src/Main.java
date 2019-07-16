@@ -1,6 +1,8 @@
+import javax.swing.plaf.ScrollBarUI;
 import java.io.IOException;
 import java.util.Scanner;
 
+import static java.lang.Math.exp;
 import static java.lang.Math.random;
 
 public class Main {
@@ -24,7 +26,7 @@ public class Main {
 
     //ввести размерность массива
     public static String inputLengthOfArray() throws IOException {
-        System.out.println("введите число-размерность масстива. Желательно не более 1000: ");
+        System.out.println("Input leangh of array:");
         Scanner in = new Scanner(System.in);
         String array_value = in.next();
         return array_value;
@@ -36,6 +38,7 @@ public class Main {
                 continue;
             } else {
                 System.out.println("You've written not a digit");
+                System.out.println("try again");
                 return false;
             }
         }
@@ -44,8 +47,8 @@ public class Main {
 
 
     //заполнить массив случайными числами
-    public static int[] inputNumInArray(String array_length) {
-        System.out.println("массив заполнен случайными числами от 1 до 100\n");
+    public static int[] inputArray(String array_length) {
+        System.out.println("the array is filled with random numbers from 1 to 100\n");
         int length = Integer.parseInt(array_length);
         int array[] = new int[length];
 
@@ -100,9 +103,6 @@ public class Main {
                 System.out.println("binary tree sort:");
                 sort8.treeSort(array);
                 break;
-            case 9:
-                System.out.println("quick");
-                break;
         }
     }
 
@@ -112,30 +112,33 @@ public class Main {
     }
 
     public static void main(String args[]) throws IOException {
-
+        Scanner in = new Scanner(System.in);
         char choice;
-
-        for (; ; ) {
-            showMenu();
-
-            String lenght = inputLengthOfArray();
-
-            do {
-                System.out.println("Make a choice of algorithm sorting:");
-                choice = (char) System.in.read();
-            } while (!isValid(choice));
-
-            if(checkLengthOfArray(lenght)) {
-                int[] inputNumInArray = inputNumInArray(lenght);
-                switch_var(choice, inputNumInArray);
-            }else
-                System.out.println("you input wrong number");
-
-            System.out.println();
-            System.out.println("Для продолжения нажмите 'y', выход - 'q'");
-            char choiceEnd = (char) System.in.read();
-            if (choiceEnd == 'y') continue;
-            else break;
+        try {
+            for (; ; ) {
+                showMenu();
+                String lenght = inputLengthOfArray();
+                do {
+                    System.out.println("Make a choice of algorithm sorting:");
+                    choice = (char) System.in.read();
+                } while (!isValid(choice));
+                if (checkLengthOfArray(lenght)) {
+                    int[] inputArray = inputArray(lenght);
+                    switch_var(choice, inputArray);
+                } else {
+                    System.out.println("you input wrong number");
+                }
+                System.out.println();
+                System.out.println("For continue press 'y', exit - 'q'");
+                char choiceEnd = in.next().charAt(0);
+                if (choiceEnd == 'Y' || choiceEnd == 'y') {
+                    continue;
+                } else
+                    System.out.println("out of program...");
+                break;
+            }
+        } catch (IOException ex) {
+            System.out.println(ex);
         }
     }
 }

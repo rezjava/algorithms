@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9a06657f-1d61-4941-afc2-c4fe581aaf87" name="Default" comment="the main() have been changed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myRepository" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ArraySort/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ArraySort/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -23,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+            <state relative-caret-position="207">
+              <caret line="133" selection-start-line="133" selection-end-line="133" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -471,10 +473,10 @@
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49469697" weight="0.45064378" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32886904" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32761088" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.4908947" weight="0.6339286" />
-      <window_info anchor="bottom" auto_hide="true" x="61" y="156" width="1309" height="446" id="Terminal" internal_type="SLIDING" order="8" sideWeight="0.49406177" type="SLIDING" weight="0.8493544" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.505303" side_tool="true" weight="0.9569584" />
+      <window_info anchor="bottom" auto_hide="true" x="61" y="156" width="1309" height="446" id="Terminal" internal_type="SLIDING" order="8" sideWeight="0.49406177" type="SLIDING" weight="0.8497854" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.505303" side_tool="true" weight="0.9556509" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.2553802" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24940617" />
@@ -567,24 +569,6 @@
     <MESSAGE value="the main() have been changed" />
     <option name="LAST_COMMIT_MESSAGE" value="the main() have been changed" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>117</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>135</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
@@ -620,8 +604,8 @@
     <entry file="file://$PROJECT_DIR$/.gitignor" />
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+        <state relative-caret-position="207">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
