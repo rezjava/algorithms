@@ -20,12 +20,11 @@ public class Main {
         System.out.println("|  8. binary tree sorting   |");
         System.out.println("| 'q' exit from program     |");
         System.out.println("|============================");
-        System.out.println("Make a choice of algorithm sorting:");
     }
 
     //ввести размерность массива
     public static String inputLengthOfArray() throws IOException {
-        System.out.println("введите размерность масстива не более 1000: ");
+        System.out.println("введите число-размерность масстива. Желательно не более 1000: ");
         Scanner in = new Scanner(System.in);
         String array_value = in.next();
         return array_value;
@@ -45,9 +44,10 @@ public class Main {
 
 
     //заполнить массив случайными числами
-    public static int[] inputNumInArray(int array_length) {
+    public static int[] inputNumInArray(String array_length) {
         System.out.println("массив заполнен случайными числами от 1 до 100\n");
-        int array[] = new int[array_length];
+        int length = Integer.parseInt(array_length);
+        int array[] = new int[length];
 
         for (int i = 0; i < array.length; i++) {
             array[i] = (int) (1 + random() * 100);
@@ -117,12 +117,20 @@ public class Main {
 
         for (; ; ) {
             showMenu();
+
+            String lenght = inputLengthOfArray();
+
             do {
+                System.out.println("Make a choice of algorithm sorting:");
                 choice = (char) System.in.read();
             } while (!isValid(choice));
 
-            int[] inputNumInArray = inputNumInArray(inputLengthOfArray());
-            switch_var(choice, inputNumInArray);
+            if(checkLengthOfArray(lenght)) {
+                int[] inputNumInArray = inputNumInArray(lenght);
+                switch_var(choice, inputNumInArray);
+            }else
+                System.out.println("you input wrong number");
+
             System.out.println();
             System.out.println("Для продолжения нажмите 'y', выход - 'q'");
             char choiceEnd = (char) System.in.read();
