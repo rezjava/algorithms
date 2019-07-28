@@ -1,3 +1,3 @@
 public interface Sort {
-    public void ToSort();
+    public void ToSort(int[] array);
 }

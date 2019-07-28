@@ -24,7 +24,7 @@ public class HeapSort implements Sort{
      * После этого в корне окажется максимальный из оставшихся элементов.
      * Повторить до тех пор, пока в куче не останется 1 элемент
      */
-    public static void ToSort(int[] a) {
+    public void ToSort(int[] a) {
         buildHeap(a);
         while (heapSize > 1) {
             swap(a, 0, heapSize - 1);

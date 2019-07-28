@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class SortInsert implements Sort {
-    public static void ToSort (int[] array) {
+    public void ToSort (int[] array) {
 
         long startTime = System.nanoTime();
 

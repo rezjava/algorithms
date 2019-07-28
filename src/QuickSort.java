@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class QuickSort implements Sort {
 
-    public static void ToSort (int[] array) {
+    public void ToSort (int[] array) {
         int startIndex = 0;
         int endIndex = array.length-1;
         doSort(array, startIndex, endIndex);

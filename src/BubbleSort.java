@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class BubbleSort implements Sort {
-    public static void ToSort (int[] array) {
+    public void ToSort (int[] array) {
         boolean isSorted = true;
         int buf;
         while (isSorted) {

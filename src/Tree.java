@@ -1,17 +1,15 @@
 public class Tree implements Sort {
 
     //вложенный класс
-    static class Node {
-        public Node left;            // левое и правое поддеревья и ключ
-        public Node right;
-        public int key;
+    private static class Node {
+        private Node left;            // левое и правое поддеревья и ключ
+        private Node right;
+        private int key;
 
-        public Node(int key) {       // конструктор с инициализацией ключа
-
+        private Node(int key) {       // конструктор с инициализацией ключа
             this.key = key;
         }
     }
-
     Node root;   // корень
 
     public void addNode(int key) {   //добавление нового узла

@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class ShellSort implements Sort
 {
-    public static void ToSort (int[] array) {
+    public  void ToSort (int[] array) {
         int increment = array.length / 2;
         while (increment >= 1) {
             for (int startIndex = 0; startIndex < increment; startIndex++) {
