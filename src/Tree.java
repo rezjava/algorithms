@@ -1,4 +1,4 @@
-public class Tree {
+public class Tree implements Sort {
 
     //вложенный класс
     static class Node {
@@ -51,7 +51,7 @@ public class Tree {
         }
     }
 
-    public void treeSort(int[] array) {
+    public void ToSort(int[] array) {
         //получить массив изаписать его в дерево и вывести дерево
         for (int i = 0; i < array.length; i++) {
             addNode(array[i]);

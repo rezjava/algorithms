@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
-public class QuickSort {
+public class QuickSort implements Sort {
 
-    public static void quickSort(int[] array) {
+    public static void ToSort (int[] array) {
         int startIndex = 0;
         int endIndex = array.length-1;
         doSort(array, startIndex, endIndex);

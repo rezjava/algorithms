@@ -1,4 +1,4 @@
-public class HeapSort {
+public class HeapSort implements Sort{
     /**
      * Класс для сортировки массива целых чисел с помощью кучи.
      * Методы в классе написаны в порядке их использования. Для сортировки
@@ -24,7 +24,7 @@ public class HeapSort {
      * После этого в корне окажется максимальный из оставшихся элементов.
      * Повторить до тех пор, пока в куче не останется 1 элемент
      */
-    public static void sort(int[] a) {
+    public static void ToSort(int[] a) {
         buildHeap(a);
         while (heapSize > 1) {
             swap(a, 0, heapSize - 1);

@@ -1,8 +1,8 @@
 import java.util.Arrays;
 
-public class SortMerger {
+public class SortMerger implements Sort{
 
-    public void sortMerger(int[] array) {
+    public void ToSort (int[] array) {
         int len = array.length;
         int n = 1; // кратность сравнений (сравнивать по 1-му елем., 2-м ...)
         int shift; // сдвиг в перебираемом массиве

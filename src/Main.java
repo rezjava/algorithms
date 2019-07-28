@@ -63,45 +63,44 @@ public class Main {
     private static void switch_var(char var, int[] array) {
         switch (var) {
             case 1:
-                SortSelection sort4 = new SortSelection();
+                SortSelection sort1 = new SortSelection();
                 System.out.println("sort selection:");
-                sort4.sortSelection(array);
-
+                sort1.ToSort(array);
                 break;
             case 2:
                 SortInsert sort3 = new SortInsert();
                 System.out.println("sort insertion:");
-                sort3.sortInsert(array);
+                sort3.ToSort(array);
                 break;
             case 3:
                 SortMerger sort2 = new SortMerger();
                 System.out.println("merge sorting:");
-                sort2.sortMerger(array);
+                sort2.ToSort(array);
                 break;
             case 4:
-                QuickSort sort1 = new QuickSort();
+                QuickSort sort4 = new QuickSort();
                 System.out.println("quick sorting:");
-                sort1.quickSort(array);
+                sort4.ToSort(array);
                 break;
             case 5:
                 HeapSort sort5 = new HeapSort();
                 System.out.println("pyramide sorting:");
-                sort5.sort(array);
+                sort5.ToSort(array);
                 break;
             case 6:
                 BubbleSort sort6 = new BubbleSort();
                 System.out.println("bubble sorting:");
-                sort6.bubbleSort(array);
+                sort6.ToSort(array);
                 break;
             case 7:
                 ShellSort sort7 = new ShellSort();
                 System.out.println("sort of shell:");
-                sort7.shellSort(array);
+                sort7.ToSort(array);
                 break;
             case 8:
                 Tree sort8 = new Tree();
                 System.out.println("binary tree sort:");
-                sort8.treeSort(array);
+                sort8.ToSort(array);
                 break;
         }
     }

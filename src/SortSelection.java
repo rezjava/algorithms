@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
-public class SortSelection {
-    public static void sortSelection(int[] array) {
+public class SortSelection implements Sort {
+    public static void ToSort (int[] array) {
         long startTime = System.nanoTime();
 
         int min, temp;
